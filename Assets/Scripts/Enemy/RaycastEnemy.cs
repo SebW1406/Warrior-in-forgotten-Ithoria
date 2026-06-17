@@ -8,7 +8,7 @@ public class RaycastEnemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player"); // Hier wird geschaut ob es ein GameObject mit dem Tag "Player" gibt
     }
 
     // Update is called once per frame
@@ -16,7 +16,7 @@ public class RaycastEnemy : MonoBehaviour
     {
         Vector2 origin = transform.position;
         Vector2 direction = (player.transform.position - transform.position).normalized;
-        int mask = LayerMask.GetMask("Player", "Default");
+        int mask = LayerMask.GetMask("Player", "Default"); // Hier wird eingestellt welche Tags berücksichtigt werden
 
         float distance = Vector2.Distance(origin, player.transform.position);
         Debug.Log(distance);
@@ -30,7 +30,7 @@ public class RaycastEnemy : MonoBehaviour
         }
         else
         {
-            Debug.Log("Treffer " + hit.collider.gameObject);
+            Debug.Log(hit.collider.gameObject);
         }
 
         Debug.DrawRay(origin, direction, Color.yellow);
