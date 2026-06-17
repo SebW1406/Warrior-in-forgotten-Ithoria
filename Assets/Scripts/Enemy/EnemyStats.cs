@@ -3,13 +3,7 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    [SerializeField] private int health = 3;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int health = 3; // Lebenspunkte des Gegner
 
     // Update is called once per frame
     void Update()
@@ -17,9 +11,9 @@ public class EnemyStats : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) 
     {
-        if (collision.CompareTag("SwordHitBox"))
+        if (collision.CompareTag("SwordHitBox")) // Wenn die SchwertHitBox auf den Gegner trifft werden Leben abgezogen vom Gegner
         {
             health --;
                         
@@ -30,5 +24,4 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
-   
 }

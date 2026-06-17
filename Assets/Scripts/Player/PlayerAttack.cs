@@ -12,7 +12,6 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (InputSystem.actions["Attack"].WasPressedThisFrame())
         {
             StartCoroutine(Attack()); // "StatCoroutine" -> Funktion wird nicht sofort komplett ausgeführt sondern über mehrere Frames hinweg
@@ -21,7 +20,6 @@ public class PlayerAttack : MonoBehaviour
 
     IEnumerator Attack()
     {
-        //attack = false;
         SwordHitBox.SetActive(true);
         yield return new WaitForSeconds(0.15f); // Zeit in der die Hitbox aktiv ist
 
