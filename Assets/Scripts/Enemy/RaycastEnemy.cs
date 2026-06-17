@@ -19,18 +19,18 @@ public class RaycastEnemy : MonoBehaviour
         int mask = LayerMask.GetMask("Player", "Default"); // Hier wird eingestellt welche Tags berücksichtigt werden
 
         float distance = Vector2.Distance(origin, player.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
 
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, maxdistanceRaycast, mask);
 
         if (hit.collider.CompareTag("Player") && distance <= 3f)
         {
-            Debug.Log("Treffer " + hit.collider.gameObject);
+            //Debug.Log("Treffer " + hit.collider.gameObject);
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 2.5f * Time.deltaTime);
         }
         else
         {
-            Debug.Log(hit.collider.gameObject);
+             //Debug.Log(hit.collider.gameObject);
         }
 
         Debug.DrawRay(origin, direction, Color.yellow);
