@@ -1,3 +1,4 @@
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,7 +7,7 @@ public class PlayerAttack : MonoBehaviour
 {
 
     public GameObject SwordHitBox;
-    private float attackCooldown = 0.3f;
+    private float attackCooldown = 0.5f;
     
 
     // Update is called once per frame
