@@ -21,7 +21,7 @@ public class PlayerStats : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("EnemyHitBox"))
         {
             health--;
             if (health <= 0)
@@ -29,11 +29,6 @@ public class PlayerStats : MonoBehaviour
                 Destroy(gameObject);
                 //Time.timeScale = 0f;
             }
-            /*while(collision.CompareTag("Enemy"))
-            {
-                Physics2D.IgnoreLayerCollision(6, 7, true);
-            }
-            */
         }
     }
 
