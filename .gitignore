@@ -49,7 +49,7 @@ Desktop.ini
 [R]elease/
 
 # --- Git LFS (optional für große Dateien) ---
-*.png
+
 *.jpg
 *.jpeg
 *.tga
