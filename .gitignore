@@ -1,13 +1,10 @@
 # --- Unity generierte Ordner ---
-[L]ibrary/
-[T]emp/
-[O]bj/
-[B]uild/
-[L]ogs/
-[U]serSettings/
-[MemoryCaptures]/
-[Recordings]/
-[CrashReports]/
+Library/
+Temp/
+Obj/
+Build/
+Logs/
+UserSettings/
 
 # --- Lokale Dateien ---
 *.csproj
@@ -49,7 +46,6 @@ Desktop.ini
 [R]elease/
 
 # --- Git LFS (optional für große Dateien) ---
-*.png
 *.jpg
 *.jpeg
 *.tga
