@@ -5,6 +5,9 @@ Obj/
 Build/
 Logs/
 UserSettings/
+MemoryCaptures/
+Recordings/
+CrashReports/
 
 # --- Lokale Dateien ---
 *.csproj
