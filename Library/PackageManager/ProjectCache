@@ -1,37 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/wiesi/Desktop/GameDev/Warrior in forgotten Ithoria Project/Warrior
-      in forgotten Ithoria/Packages/manifest.json
+    m_FilePath: D:/GitHubOrdner/Warrior-in-forgotten-Ithoria/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639170287850515741
-    m_Hash: 2376107707
+      ticks: 639174912184499068
+    m_Hash: 3339551116
   m_LockFileStatus:
-    m_FilePath: C:/Users/wiesi/Desktop/GameDev/Warrior in forgotten Ithoria Project/Warrior
-      in forgotten Ithoria/Packages/packages-lock.json
+    m_FilePath: D:/GitHubOrdner/Warrior-in-forgotten-Ithoria/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639170288352306754
-    m_Hash: 2437335445
+      ticks: 639174914088034576
+    m_Hash: 3038161948
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/Users/wiesi/Desktop/GameDev/Warrior in forgotten Ithoria Project/Warrior
-  in forgotten Ithoria/Packages
-m_EditorVersion: 6000.3.14f1 (d68c3f99a318)
+m_ProjectPath: D:/GitHubOrdner/Warrior-in-forgotten-Ithoria/Packages
+m_EditorVersion: 6000.4.2f1 (7a4c1aeef971)
 m_ResolvedPackages:
-- packageId: com.unity.2d.animation@13.0.4
+- packageId: com.unity.2d.animation@14.0.3
   testable: 0
   isDirectDependency: 1
-  version: 13.0.4
+  version: 14.0.3
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.animation@7396d8477ca9
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.animation@a6f2f1d22eb5
   assetPath: Packages/com.unity.2d.animation
   name: com.unity.2d.animation
   displayName: 2D Animation
@@ -206,13 +202,13 @@ m_ResolvedPackages:
     - 15.1.0
     - 16.0.0
     compatible:
-    - 13.0.4
-    - 13.0.5
-    recommended: 13.0.5
+    - 14.0.3
+    - 14.0.4
+    recommended: 14.0.4
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
-    version: 12.0.2
+    version: 13.0.1
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.collections
@@ -223,7 +219,7 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.common
-    version: 12.0.2
+    version: 13.0.1
   - name: com.unity.burst
     version: 1.8.29
   - name: com.unity.mathematics
@@ -233,15 +229,15 @@ m_ResolvedPackages:
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
   - name: com.unity.modules.animation
@@ -274,16 +270,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639046578429950000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.animation@13.0/manual/index.html
+  datePublishedTicks: 639076743473670000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.animation@14.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 68e84cab9388239c8f92dfd84eca0bd3e85c8896
+    revision: 09156026ac819d901f92f956a6317aacbae1ba9e
     path: 
   unityLifecycle:
-    version: 13.0.4
+    version: 14.0.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -294,8 +290,25 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fix unused separation line is used in
-    the Context Menu of the Sprite Library Editor Window (DANB-1226)"}'
+  upmReserved: '{"changelog":"### Fixed\n- Disable \"Delete Selected Labels\" menu
+    when nothing is selected in SpriteLibraryEditor (DANB-1201)\n- Fix SpriteSkin
+    BoundsMode assertion failures. (DANB-1181)\n- Refresh sprite library editor when
+    deleting asset. (DANB-1232)\n- Fix exception occurs when changing SpriteSkin''s
+    bounds mode after deleting bones in play mode. (DANB-1224)\n- Fix SpriteSkin
+    bone bounds update timing. (DANB-1180)\n- Fix sprite disappearing on undo by
+    resetting bone transform index in DeactivateSkinning. (DANB-1238)\n- Fix \"IKGizmos:
+    Mismatching number of solvers\" errors when loading invalid prefabs (UUM-131322,
+    DANB-1254)\n- Fix unused separation line is used in the Context Menu of the Sprite
+    Library Editor Window (DANB-1226)\n- Fix transform index corruption caused by
+    missing dirty flag update after array compaction. (UUM-131697)\n- Reduce memory
+    usage and the workload during SpriteSkin initialization. (UUM-131270)\n- Fix
+    the ? button in the IKManager2D inspector points to an Invalid link. (UUM-131299)\n-
+    Fix the issue that the internal class CullingManager is available in AddComponent.
+    (UUM-131877)\n- Fix the missing documentation link of CCD Solver 2D Component.
+    (UUM-131875)\n- Fix the missing documentation link of Fabrik Solver 2D Component.
+    (UUM-131879)\n- Fix the missing documentation link of Limb Solver 2D Component.
+    (UUM-131891)\n- Do not show Sprite Library Editor''s save confirmation when applying
+    from the Inspector; Editor is reset from disk like when selection changes. (DANB-1090)"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -309,24 +322,23 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 7396d8477ca93349104292dd0d2c0df8d8ad4c21
+  fingerprint: a6f2f1d22eb58f97dd6f3c2155404815c5a2bf26
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 13.0.4
-    minimumUnityVersion: 6000.3.0a2
+    minimumPackageVersion: 14.0.3
+    minimumUnityVersion: 6000.4.0a4
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.2d.aseprite@3.0.1
+- packageId: com.unity.2d.aseprite@4.0.1
   testable: 0
   isDirectDependency: 1
-  version: 3.0.1
+  version: 4.0.1
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.aseprite@809e3a168ff7
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.aseprite@151b68d46c40
   assetPath: Packages/com.unity.2d.aseprite
   name: com.unity.2d.aseprite
   displayName: 2D Aseprite Importer
@@ -380,13 +392,13 @@ m_ResolvedPackages:
     - 5.0.3
     - 6.0.0
     compatible:
-    - 3.0.1
-    - 3.0.2
-    recommended: 3.0.2
+    - 4.0.1
+    - 4.0.2
+    recommended: 4.0.2
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
-    version: 12.0.1
+    version: 13.0.1
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.2d.tilemap
@@ -397,7 +409,7 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.common
-    version: 12.0.2
+    version: 13.0.1
   - name: com.unity.burst
     version: 1.8.29
   - name: com.unity.mathematics
@@ -407,15 +419,15 @@ m_ResolvedPackages:
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
   - name: com.unity.modules.animation
@@ -457,16 +469,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638956665229940000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.aseprite@3.0/manual/index.html
+  datePublishedTicks: 639076743489250000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.aseprite@4.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 0f527ad8312724fd801fb3b317d1f4be2f019652
+    revision: 09156026ac819d901f92f956a6317aacbae1ba9e
     path: 
   unityLifecycle:
-    version: 3.0.1
+    version: 4.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -477,8 +489,12 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n- Switched the internals from using custom
-    common package, to make use of the 2D Common package."}'
+  upmReserved: '{"changelog":"### Fixed\n- Reduced the size of the buttons in the
+    Export asset window. (UUM-132863)\n- Fixed an issue where the editor would display
+    errors when reverting changes to the Import Mode in the inspector. (UUM-132892)\n-
+    Fixed an issue where changes to the Pivot Alignment in the inspector could not
+    be reverted. (UUM-132868)\n- Fixed an issue where new lines and white spaces
+    would create unusable animation events. (UUM-133339)"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -492,24 +508,23 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 809e3a168ff77eff802b4b24c10cf6254618245a
+  fingerprint: 151b68d46c4040639cc917c030eec74270029275
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 3.0.1
-    minimumUnityVersion: 6000.3.0a2
+    minimumPackageVersion: 4.0.1
+    minimumUnityVersion: 6000.4.0a4
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.2d.psdimporter@12.0.1
+- packageId: com.unity.2d.psdimporter@13.0.2
   testable: 0
   isDirectDependency: 1
-  version: 12.0.1
+  version: 13.0.2
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.psdimporter@9abe0f7cac7e
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.psdimporter@11a0e04e0561
   assetPath: Packages/com.unity.2d.psdimporter
   name: com.unity.2d.psdimporter
   displayName: 2D PSD Importer
@@ -629,20 +644,20 @@ m_ResolvedPackages:
     - 14.0.3
     - 15.0.0
     compatible:
-    - 12.0.1
-    - 12.0.2
-    recommended: 12.0.2
+    - 13.0.2
+    - 13.0.3
+    recommended: 13.0.3
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
-    version: 12.0.1
+    version: 13.0.1
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.2d.tilemap
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.common
-    version: 12.0.2
+    version: 13.0.1
   - name: com.unity.burst
     version: 1.8.29
   - name: com.unity.mathematics
@@ -652,15 +667,15 @@ m_ResolvedPackages:
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
   - name: com.unity.modules.animation
@@ -700,16 +715,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638990587854760000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.psdimporter@12.0/manual/index.html
+  datePublishedTicks: 639076743518490000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.psdimporter@13.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 8bf1079cdd627cb76fad4a3267f28d8890fcd5db
+    revision: 09156026ac819d901f92f956a6317aacbae1ba9e
     path: 
   unityLifecycle:
-    version: 12.0.1
+    version: 13.0.2
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -720,9 +735,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n- Exclude empty layers from import.\n\n###
-    Fixed\n- Fix null reference exception occurs when importing psd without visible
-    layers. (DANB-1155)\n- Correct layer mask position relative to its layer. (DANB-1177)"}'
+  upmReserved: '{"changelog":"### Changed\n- Remove the analytics features in 2D
+    Animation and PSDImporter"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -736,11 +750,11 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 9abe0f7cac7effda42d93c33a6c35134cca1bee3
+  fingerprint: 11a0e04e0561e872deef54a772d616a87d9a30bd
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 12.0.1
-    minimumUnityVersion: 6000.3.0a2
+    minimumPackageVersion: 13.0.2
+    minimumUnityVersion: 6000.4.0a4
   compliance:
     status: 0
     violation:
@@ -752,8 +766,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.sprite@d14b9d497a24
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.sprite@929df5adbb1f
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -828,7 +841,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: d14b9d497a24d5fc6a731faaacfb216ac084478e
+  fingerprint: 929df5adbb1fa0f2e55b55a7cfb69bde65a57b7d
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
@@ -839,13 +852,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.2d.spriteshape@13.0.0
+- packageId: com.unity.2d.spriteshape@14.0.1
   testable: 0
   isDirectDependency: 1
-  version: 13.0.0
+  version: 14.0.1
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.spriteshape@0738bab11647
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.spriteshape@da3647ffbbd7
   assetPath: Packages/com.unity.2d.spriteshape
   name: com.unity.2d.spriteshape
   displayName: 2D SpriteShape
@@ -968,19 +980,19 @@ m_ResolvedPackages:
     - 15.0.3
     - 16.0.0
     compatible:
-    - 13.0.0
-    recommended: 13.0.0
+    - 14.0.1
+    recommended: 14.0.1
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
-    version: 12.0.0
+    version: 13.0.1
   - name: com.unity.mathematics
     version: 1.1.0
   - name: com.unity.modules.physics2d
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.common
-    version: 12.0.2
+    version: 13.0.1
   - name: com.unity.burst
     version: 1.8.29
   - name: com.unity.mathematics
@@ -990,15 +1002,15 @@ m_ResolvedPackages:
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
   - name: com.unity.modules.animation
@@ -1037,16 +1049,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638895774099940000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@13.0/manual/index.html
+  datePublishedTicks: 639076743508240000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@14.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 1ef60d478f22a420064f300ba7c3b3d6d3536dc3
+    revision: 09156026ac819d901f92f956a6317aacbae1ba9e
     path: 
   unityLifecycle:
-    version: 13.0.0
+    version: 14.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1057,11 +1069,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n- Update minimum Unity version.\n- Updated
-    Spriteshape extras to use new InputSystem.\n\n### Fixed\n- UUM-108688 Fix Sprite
-    Shape Profile Asset icon which was low quality and blurry in Project window\n-
-    Use EditorUtility.EntityIdToObject instead of EditorUtility.InstanceIDToObject
-    which is deprecated. (DANB-1042)"}'
+  upmReserved: '{"changelog":"### Changed\n - Replace Entityid from InstanceID to
+    eliminate implicit cast (DANB-1206)"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -1075,11 +1084,11 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 0738bab116473980325be8cdb7c3c42ab6961778
+  fingerprint: da3647ffbbd720e49fdad337105d014d0ef7ac3e
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 13.0.0
-    minimumUnityVersion: 6000.3.0a2
+    minimumPackageVersion: 14.0.1
+    minimumUnityVersion: 6000.4.0a4
   compliance:
     status: 0
     violation:
@@ -1091,8 +1100,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.tilemap@43eb9b2da17d
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.tilemap@c457c5249013
   assetPath: Packages/com.unity.2d.tilemap
   name: com.unity.2d.tilemap
   displayName: 2D Tilemap Editor
@@ -1186,7 +1194,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 43eb9b2da17d812000bba87deb7368eba7efe615
+  fingerprint: c457c5249013beed66a11f777c91a4fb12142f14
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
@@ -1197,13 +1205,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.2d.tilemap.extras@6.0.1
+- packageId: com.unity.2d.tilemap.extras@7.0.1
   testable: 0
   isDirectDependency: 1
-  version: 6.0.1
+  version: 7.0.1
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.tilemap.extras@3dde84bf3867
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.tilemap.extras@66df903b3633
   assetPath: Packages/com.unity.2d.tilemap.extras
   name: com.unity.2d.tilemap.extras
   displayName: 2D Tilemap Extras
@@ -1288,11 +1295,13 @@ m_ResolvedPackages:
     - 8.0.2
     - 8.0.3
     - 8.88.0-exp.1
+    - 8.88.0-exp.2
     - 9.0.0
     compatible:
-    - 6.0.1
-    - 6.0.2
-    recommended: 6.0.2
+    - 7.0.1
+    - 8.0.0-exp.1
+    - 8.88.0-exp.1
+    recommended: 7.0.1
     deprecated: []
   dependencies:
   - name: com.unity.2d.tilemap
@@ -1337,16 +1346,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638956665244800000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.tilemap.extras@6.0/manual/index.html
+  datePublishedTicks: 639076743436390000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.tilemap.extras@7.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 0f527ad8312724fd801fb3b317d1f4be2f019652
+    revision: 09156026ac819d901f92f956a6317aacbae1ba9e
     path: 
   unityLifecycle:
-    version: 6.0.1
+    version: 7.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1357,13 +1366,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n- [AutoTile] Add Has Physics Shape property
-    if Collider Type is set to Sprite. AutoTile will set Collider Type to Sprite
-    if the Sprite has physics shape and set Collider Type to None if the Sprite has
-    no physics shape.\n\n### Fixed\n- [RuleTileEditor] Fix exception thrown when
-    a Rule is added to an empty RuleTile, removed and added again.\n- [AutoTileEditor]
-    Fix minimum texture scale size when texture is smaller than 256 pixels\n- [AutoTileEditor]
-    Fix texture display when texture is removed from AutoTile"}'
+  upmReserved: '{"changelog":"### Fixed\n- Replace Entityid from InstanceID to eliminate
+    implicit cast (DANB-1206)"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -1377,24 +1381,23 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 3dde84bf38677b4165ad5f568b353d4ba942d63c
+  fingerprint: 66df903b36331a8612aa7ab7f78c80f5d5de086a
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 6.0.1
-    minimumUnityVersion: 6000.3.0a2
+    minimumPackageVersion: 7.0.1
+    minimumUnityVersion: 6000.4.0a1
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.2d.tooling@1.0.2
+- packageId: com.unity.2d.tooling@2.0.1
   testable: 0
   isDirectDependency: 1
-  version: 1.0.2
+  version: 2.0.1
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.tooling@249995156768
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.tooling@baa4133dcff2
   assetPath: Packages/com.unity.2d.tooling
   name: com.unity.2d.tooling
   displayName: 2D Tooling
@@ -1420,18 +1423,18 @@ m_ResolvedPackages:
     - 3.0.1
     - 4.0.0
     compatible:
-    - 1.0.2
-    - 1.0.3
-    recommended: 1.0.3
+    - 2.0.1
+    - 2.0.2
+    recommended: 2.0.2
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
-    version: 12.0.2
+    version: 13.0.1
   - name: com.unity.modules.uielements
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.common
-    version: 12.0.2
+    version: 13.0.1
   - name: com.unity.burst
     version: 1.8.29
   - name: com.unity.mathematics
@@ -1441,15 +1444,15 @@ m_ResolvedPackages:
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
   - name: com.unity.modules.animation
@@ -1480,16 +1483,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639046578438370000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.tooling@1.0/manual/index.html
+  datePublishedTicks: 639076743445520000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.tooling@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 68e84cab9388239c8f92dfd84eca0bd3e85c8896
+    revision: 09156026ac819d901f92f956a6317aacbae1ba9e
     path: 
   unityLifecycle:
-    version: 1.0.2
+    version: 2.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1500,7 +1503,9 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n- Update minimum Unity version."}'
+  upmReserved: '{"changelog":"# Added\n- Columns for all Sprite Atlas reports can
+    be sorted.\n  \n### Fixed\n- Fixed secondary texture in Sprite Atlas mistaken
+    as atlas with more than 1 texture. (DANB-1210)"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -1514,11 +1519,11 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 2499951567687634a16f41e9f26ee5dfeb8f8da6
+  fingerprint: baa4133dcff250a359748b59a534fd6575b25a8a
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.0.2
-    minimumUnityVersion: 6000.3.0a2
+    minimumPackageVersion: 2.0.1
+    minimumUnityVersion: 6000.4.0a4
   compliance:
     status: 0
     violation:
@@ -1530,8 +1535,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.12.4
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -1747,8 +1751,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.39
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.ide.rider@4504839d03f7
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.ide.rider@4504839d03f7
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -1888,13 +1891,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.ide.visualstudio@2.0.26
+- packageId: com.unity.ide.visualstudio@2.0.27
   testable: 0
   isDirectDependency: 1
-  version: 2.0.26
+  version: 2.0.27
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.ide.visualstudio@dc1ddd4f09b6
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -1939,7 +1941,6 @@ m_ResolvedPackages:
     - 2.0.26
     - 2.0.27
     compatible:
-    - 2.0.26
     - 2.0.27
     recommended: 2.0.27
     deprecated: []
@@ -1971,16 +1972,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639014773899080000
+  datePublishedTicks: 639057939089480000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: a52ff32ff9e8cf43be6597597939ef63126ab463
+    revision: 4b2a3082a6e79faf658e8d766c820083b736eed6
     path: 
   unityLifecycle:
-    version: 2.0.26
+    version: 2.0.27
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1991,9 +1992,11 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"Integration:\n\n- Fix handling of asset-pipeline refresh-mode
-    setting.\n\nProject generation:\n\n- Add `EnableOnDemandExcludedFolderLoading`
-    capability when generating SDK-Style project."}'
+  upmReserved: '{"changelog":"Integration:\n\n- Fix Visual Studio Integration to
+    properly wait for the solution to be opened.\n\nProject generation:\n\n- Disable
+    Workspace-based development feature in `settings.json`.\n- Ensure that we only
+    have one `sln` or `slnx` file at a time.\n- Properly handle filenames with special
+    characters in `link` tags."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -2007,10 +2010,10 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: a99d56dec63ffb3a911a5a9bce9b77ba862a601c
+  fingerprint: dc1ddd4f09b68a99b5dc00185f3b7551294e28a7
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.0.26
+    minimumPackageVersion: 2.0.27
     minimumUnityVersion: 2021.3
   compliance:
     status: 0
@@ -2023,8 +2026,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.19.0
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -2208,8 +2210,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -2311,13 +2312,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.render-pipelines.universal@17.3.0
+- packageId: com.unity.render-pipelines.universal@17.4.0
   testable: 0
   isDirectDependency: 1
-  version: 17.3.0
+  version: 17.4.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.render-pipelines.universal@3b809f23691d
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.render-pipelines.universal@1ad96352dab8
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal Render Pipeline
@@ -2334,21 +2334,21 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 17.3.0
+    - 17.4.0
     compatible:
-    - 17.3.0
-    recommended: 17.3.0
+    - 17.4.0
+    recommended: 17.4.0
     deprecated: []
   dependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.3.0
+    version: 17.4.0
   - name: com.unity.shadergraph
-    version: 17.3.0
+    version: 17.4.0
   - name: com.unity.render-pipelines.universal-config
-    version: 17.0.3
+    version: 17.4.0
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.3.0
+    version: 17.4.0
   - name: com.unity.burst
     version: 1.8.29
   - name: com.unity.mathematics
@@ -2362,25 +2362,23 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
   - name: com.unity.shadergraph
-    version: 17.3.0
+    version: 17.4.0
   - name: com.unity.searcher
     version: 4.9.4
   - name: com.unity.render-pipelines.universal-config
-    version: 17.0.3
+    version: 17.4.0
   keywords:
   - graphics
   - performance
@@ -2412,7 +2410,7 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 17.3.0
+    version: 17.4.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -2437,11 +2435,11 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 3b809f23691d7b5cf34110454146e41f240e6f91
+  fingerprint: 1ad96352dab884a2906d735a747876cbf4fc5f84
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 17.3.0
-    minimumUnityVersion: 6000.3
+    minimumPackageVersion: 17.4.0
+    minimumUnityVersion: 6000.4
   compliance:
     status: 0
     violation:
@@ -2453,8 +2451,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.6.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.test-framework@aebcb98460c6
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.test-framework@76560ee600cb
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -2539,7 +2536,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: aebcb98460c6bace03eba5166f374975b3b0bb18
+  fingerprint: 76560ee600cb07c29e08760be4a5c75da65a9d9e
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.6.0
@@ -2555,8 +2552,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.12
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.timeline@8cd8509afae5
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.timeline@8cd8509afae5
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -2757,8 +2753,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.ugui@8ccc29d23a79
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.ugui@d8a2716f3013
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: uGUI
@@ -2849,7 +2844,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 8ccc29d23a79b6785b16aa5c071a632b8148cd58
+  fingerprint: d8a2716f30132e533c8f0cd850b4ba55bd18c2a6
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
@@ -2865,8 +2860,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.11
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.visualscripting@8bed5ad90189
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.visualscripting@8bed5ad90189
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -3006,8 +3000,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.accessibility
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.accessibility
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -3095,8 +3088,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.adaptiveperformance
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.adaptiveperformance
   assetPath: Packages/com.unity.modules.adaptiveperformance
   name: com.unity.modules.adaptiveperformance
   displayName: Adaptive Performance
@@ -3190,8 +3182,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.ai
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.ai
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -3279,8 +3270,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.androidjni
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.androidjni
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -3367,8 +3357,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.animation
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.animation
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -3456,8 +3445,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.assetbundle
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.assetbundle
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -3545,8 +3533,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.audio
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.audio
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -3634,8 +3621,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.cloth
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.cloth
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -3727,8 +3713,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.director
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.director
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -3824,8 +3809,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.imageconversion
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.imageconversion
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -3913,8 +3897,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.imgui
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.imgui
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -4002,8 +3985,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.jsonserialize
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.jsonserialize
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -4091,8 +4073,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.particlesystem
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.particlesystem
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -4180,8 +4161,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.physics
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.physics
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -4269,8 +4249,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.physics2d
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.physics2d
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -4358,8 +4337,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.screencapture
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.screencapture
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -4451,8 +4429,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.terrain
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.terrain
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -4540,8 +4517,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.terrainphysics
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.terrainphysics
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -4637,8 +4613,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.tilemap
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.tilemap
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -4729,8 +4704,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.ui
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.ui
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -4818,8 +4792,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.uielements
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.uielements
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -4927,8 +4900,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.umbra
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.umbra
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -5016,8 +4988,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.unityanalytics
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.unityanalytics
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -5112,8 +5083,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.unitywebrequest
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.unitywebrequest
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -5201,8 +5171,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -5298,8 +5267,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.unitywebrequestaudio
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.unitywebrequestaudio
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -5395,8 +5363,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.unitywebrequesttexture
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.unitywebrequesttexture
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -5492,8 +5459,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.unitywebrequestwww
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.unitywebrequestwww
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -5605,8 +5571,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.vectorgraphics
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.vectorgraphics
   assetPath: Packages/com.unity.modules.vectorgraphics
   name: com.unity.modules.vectorgraphics
   displayName: Vector Graphics
@@ -5713,8 +5678,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.vehicles
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.vehicles
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -5806,8 +5770,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.video
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.video
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -5907,8 +5870,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.vr
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.vr
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -6011,8 +5973,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.wind
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.wind
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -6100,8 +6061,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.xr
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.xr
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -6201,8 +6161,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.subsystems
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.subsystems
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -6294,8 +6253,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.modules.hierarchycore
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.modules.hierarchycore
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -6383,8 +6341,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.ext.nunit@d8c07649098d
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.ext.nunit@d8c07649098d
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -6470,13 +6427,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.render-pipelines.core@17.3.0
+- packageId: com.unity.render-pipelines.core@17.4.0
   testable: 0
   isDirectDependency: 0
-  version: 17.3.0
+  version: 17.4.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.render-pipelines.core@02dfbe8e43de
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.render-pipelines.core@9d79d0cd2cf7
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Scriptable Render Pipeline Core
@@ -6496,10 +6452,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 17.3.0
+    - 17.4.0
     compatible:
-    - 17.3.0
-    recommended: 17.3.0
+    - 17.4.0
+    recommended: 17.4.0
     deprecated: []
   dependencies:
   - name: com.unity.burst
@@ -6510,8 +6466,6 @@ m_ResolvedPackages:
     version: 2.0.0
   - name: com.unity.collections
     version: 2.4.3
-  - name: com.unity.modules.physics
-    version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -6530,17 +6484,15 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
   keywords: []
@@ -6568,7 +6520,7 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 17.3.0
+    version: 17.4.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -6593,24 +6545,23 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 02dfbe8e43defa81e3dcf190306217158eee0a92
+  fingerprint: 9d79d0cd2cf71fd6f03c81d66906e89488a7f1a7
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 17.3.0
-    minimumUnityVersion: 6000.3
+    minimumPackageVersion: 17.4.0
+    minimumUnityVersion: 6000.4
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.shadergraph@17.3.0
+- packageId: com.unity.shadergraph@17.4.0
   testable: 0
   isDirectDependency: 0
-  version: 17.3.0
+  version: 17.4.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.shadergraph@28ee1cc75774
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.shadergraph@34406da38d62
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -6628,19 +6579,19 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 17.3.0
+    - 17.4.0
     compatible:
-    - 17.3.0
-    recommended: 17.3.0
+    - 17.4.0
+    recommended: 17.4.0
     deprecated: []
   dependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.3.0
+    version: 17.4.0
   - name: com.unity.searcher
     version: 4.9.3
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.3.0
+    version: 17.4.0
   - name: com.unity.burst
     version: 1.8.29
   - name: com.unity.mathematics
@@ -6654,17 +6605,15 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
   - name: com.unity.searcher
@@ -6694,7 +6643,7 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 17.3.0
+    version: 17.4.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -6719,24 +6668,23 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 28ee1cc75774260e8b39e81c87cfd078fb0aea15
+  fingerprint: 34406da38d627a34e97f9a855a205db3fdc9bdc1
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 17.3.0
-    minimumUnityVersion: 6000.3
+    minimumPackageVersion: 17.4.0
+    minimumUnityVersion: 6000.4
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.render-pipelines.universal-config@17.0.3
+- packageId: com.unity.render-pipelines.universal-config@17.4.0
   testable: 0
   isDirectDependency: 0
-  version: 17.0.3
+  version: 17.4.0
   source: 2
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.render-pipelines.universal-config@0db4263b9e6b
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal Render Pipeline Config
@@ -6750,17 +6698,17 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 17.0.3
+    - 17.4.0
     compatible:
-    - 17.0.3
-    recommended: 17.0.3
+    - 17.4.0
+    recommended: 17.4.0
     deprecated: []
   dependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.0.3
+    version: 17.4.0
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 17.3.0
+    version: 17.4.0
   - name: com.unity.burst
     version: 1.8.29
   - name: com.unity.mathematics
@@ -6774,17 +6722,15 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
   - name: com.unity.modules.terrain
     version: 1.0.0
   keywords: []
@@ -6812,7 +6758,7 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 17.0.3
+    version: 17.4.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -6837,24 +6783,23 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 8dc1aab4af1d718781689a36ed5231a35ad1a524
+  fingerprint: 0db4263b9e6bf7bab5fa0de676e2dc8228fd457d
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 17.0.3
-    minimumUnityVersion: 6000.0
+    minimumPackageVersion: 17.4.0
+    minimumUnityVersion: 6000.4
   compliance:
     status: 0
     violation:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.2d.common@12.0.2
+- packageId: com.unity.2d.common@13.0.1
   testable: 0
   isDirectDependency: 0
-  version: 12.0.2
+  version: 13.0.1
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.2d.common@800085e896ad
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.2d.common@49d8bea2bff3
   assetPath: Packages/com.unity.2d.common
   name: com.unity.2d.common
   displayName: 2D Common
@@ -6948,9 +6893,9 @@ m_ResolvedPackages:
     - 14.0.1
     - 15.0.0
     compatible:
-    - 12.0.2
-    - 12.0.3
-    recommended: 12.0.3
+    - 13.0.1
+    - 13.0.2
+    recommended: 13.0.2
     deprecated: []
   dependencies:
   - name: com.unity.burst
@@ -6977,15 +6922,15 @@ m_ResolvedPackages:
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.collections
-    version: 2.6.5
+    version: 6.4.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
   - name: com.unity.modules.animation
@@ -7017,16 +6962,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639046578402730000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.common@12.0/manual/index.html
+  datePublishedTicks: 638989665960540000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.common@13.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 68e84cab9388239c8f92dfd84eca0bd3e85c8896
+    revision: 69096ec8a10aa102448b07d1bfd3cbfa319ee313
     path: 
   unityLifecycle:
-    version: 12.0.2
+    version: 13.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -7037,7 +6982,9 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n- Update minimum Unity version."}'
+  upmReserved: '{"changelog":"### Fixed\n- Added code support to fix warnings of
+    \"a shader without GPU deformation support\" occurs when switching from CPU to
+    GPU Skinning with a PSB skinned sprite (DANB-1079)"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -7051,11 +6998,11 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 800085e896ad4b33b2dc3739891463543ac489d1
+  fingerprint: 49d8bea2bff38bcb90716a3a68cef631b6087562
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 12.0.2
-    minimumUnityVersion: 6000.3.0a2
+    minimumPackageVersion: 13.0.1
+    minimumUnityVersion: 6000.4.0a4
   compliance:
     status: 0
     violation:
@@ -7067,8 +7014,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.3.3
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.mathematics@19a9377c4ffa
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.mathematics@19a9377c4ffa
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -7174,13 +7120,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.collections@2.6.5
+- packageId: com.unity.collections@6.4.0
   testable: 0
   isDirectDependency: 0
-  version: 2.6.5
-  source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.collections@12999e356c23
+  version: 6.4.0
+  source: 2
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.collections@05d86f76b771
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -7195,104 +7140,20 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 0.0.9-preview.1
-    - 0.0.9-preview.2
-    - 0.0.9-preview.3
-    - 0.0.9-preview.4
-    - 0.0.9-preview.5
-    - 0.0.9-preview.6
-    - 0.0.9-preview.7
-    - 0.0.9-preview.8
-    - 0.0.9-preview.9
-    - 0.0.9-preview.10
-    - 0.0.9-preview.11
-    - 0.0.9-preview.12
-    - 0.0.9-preview.13
-    - 0.0.9-preview.14
-    - 0.0.9-preview.15
-    - 0.0.9-preview.16
-    - 0.0.9-preview.17
-    - 0.0.9-preview.18
-    - 0.0.9-preview.19
-    - 0.0.9-preview.20
-    - 0.1.0-preview
-    - 0.1.1-preview
-    - 0.2.0-preview.13
-    - 0.3.0-preview.0
-    - 0.4.0-preview.6
-    - 0.5.0-preview.9
-    - 0.5.1-preview.11
-    - 0.5.2-preview.8
-    - 0.6.0-preview.9
-    - 0.7.0-preview.2
-    - 0.7.1-preview.3
-    - 0.8.0-preview.5
-    - 0.9.0-preview.5
-    - 0.9.0-preview.6
-    - 0.11.0-preview.17
-    - 0.12.0-preview.13
-    - 0.14.0-preview.16
-    - 0.15.0-preview.21
-    - 0.17.0-preview.18
-    - 1.0.0-pre.3
-    - 1.0.0-pre.5
-    - 1.0.0-pre.6
-    - 1.1.0
-    - 1.2.3-pre.1
-    - 1.2.3
-    - 1.2.4
-    - 1.3.1
-    - 1.4.0
-    - 1.5.1
-    - 1.5.2
-    - 2.1.0-exp.4
-    - 2.1.0-pre.2
-    - 2.1.0-pre.6
-    - 2.1.0-pre.11
-    - 2.1.0-pre.18
-    - 2.1.1
-    - 2.1.4
-    - 2.2.0
-    - 2.2.1
-    - 2.3.0-exp.1
-    - 2.3.0-pre.3
-    - 2.4.0-exp.2
-    - 2.4.0-pre.2
-    - 2.4.0-pre.5
-    - 2.4.0
-    - 2.4.1
-    - 2.4.2
-    - 2.4.3
-    - 2.5.0-exp.1
-    - 2.5.0-pre.2
-    - 2.5.1
-    - 2.5.2
-    - 2.5.3
-    - 2.5.7
-    - 2.6.0-exp.2
-    - 2.6.0-pre.3
-    - 2.6.0-pre.4
-    - 2.6.2
-    - 2.6.3
-    - 2.6.4
-    - 2.6.5
-    - 2.6.6
-    - 2.6.7
+    - 6.4.0
     compatible:
-    - 2.6.5
-    - 2.6.6
-    - 2.6.7
-    recommended: 2.6.7
+    - 6.4.0
+    recommended: 6.4.0
     deprecated: []
   dependencies:
   - name: com.unity.burst
-    version: 1.8.27
+    version: 1.8.23
   - name: com.unity.mathematics
     version: 1.3.2
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.5
   - name: com.unity.test-framework
     version: 1.4.6
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.0.3
   resolvedDependencies:
@@ -7302,14 +7163,14 @@ m_ResolvedPackages:
     version: 1.3.3
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
   - name: com.unity.test-framework
     version: 1.6.0
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.6
   - name: com.unity.test-framework.performance
     version: 3.4.0
   keywords:
@@ -7329,18 +7190,18 @@ m_ResolvedPackages:
       violations: []
   hideInEditor: 1
   entitlements:
-    licensingModel: 1
+    licensingModel: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 639070943945540000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collections@2.6/manual/index.html
-  hasRepository: 1
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
   repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/dots.git
-    revision: 9ce7aaae63152f48e04b260300df3a0f662ce2b5
+    type: 
+    url: 
+    revision: 
     path: 
   unityLifecycle:
-    version: 2.6.5
+    version: 6.4.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -7351,14 +7212,13 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n\n* Updated `com.unity.burst` dependency
-    to version `1.8.27`\n\n\n### Security"}'
+  upmReserved: 
   signature:
-    status: 1
-    reason: Signature is ok
+    status: 0
+    reason: 
     attestation:
-      format: archive
-      publishingChannel: unity
+      format: 
+      publishingChannel: 
       entitlementKeys: []
       ownerOrgName: 
       ownerOrgId: 
@@ -7366,11 +7226,11 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 12999e356c23ff259c1818d8c92b464bca5037df
+  fingerprint: 05d86f76b771a0d10f6e4f99d2c18e58ff3d82e9
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.6.5
-    minimumUnityVersion: 2022.3.20f1
+    minimumPackageVersion: 6.4.0
+    minimumUnityVersion: 6000.4
   compliance:
     status: 0
     violation:
@@ -7382,8 +7242,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.9.4
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.searcher@d45a78918735
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.searcher@d45a78918735
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -7491,8 +7350,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.29
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.burst@6bb9aca3ef38
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.burst@6bb9aca3ef38
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -7736,8 +7594,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.11.6
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -7842,8 +7699,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.4.0
   source: 1
-  resolvedPath: C:\Users\wiesi\Desktop\GameDev\Warrior in forgotten Ithoria Project\Warrior
-    in forgotten Ithoria\Library\PackageCache\com.unity.test-framework.performance@aa81a99c4a75
+  resolvedPath: D:\GitHubOrdner\Warrior-in-forgotten-Ithoria\Library\PackageCache\com.unity.test-framework.performance@aa81a99c4a75
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -8001,4 +7857,4 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-m_BuiltInPackagesHash: 3593af388265cf7431adde217c1c77555ca78bc0
+m_BuiltInPackagesHash: de1fbd7f4cfba3db83d1f1319ee42d71304a99b6
