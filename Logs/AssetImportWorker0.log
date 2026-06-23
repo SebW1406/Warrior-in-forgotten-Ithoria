@@ -1,4 +1,5 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+<<<<<<< Updated upstream
 Built from '6000.3/staging' branch; Version is '6000.3.14f1 (d68c3f99a318) revision 14060607'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'de' Physical Memory: 32694 MB
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-wiesi" at "2026-06-23T16:41:12.3504526Z"
@@ -6,6 +7,15 @@ BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
 Date: 2026-06-23T16:41:12Z
+=======
+Built from '6000.4/staging' branch; Version is '6000.4.2f1 (7a4c1aeef971) revision 8014874'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'de' Physical Memory: 32694 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-06-23T18:52:07Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-wiesi" at "2026-06-23T18:52:07.6391968Z"
+>>>>>>> Stashed changes
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Unity.exe
@@ -19,9 +29,16 @@ C:/Users/wiesi/Desktop/GameDev/Warrior in forgotten Ithoria Project/Warrior in f
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 60902
 -licensingIpc
 LicenseClient-wiesi
+=======
+62514
+-licensingIpc
+LicenseClient-wiesi
+-force-d3d12
+>>>>>>> Stashed changes
 -job-worker-count
 7
 -background-job-worker-count
@@ -66,6 +83,7 @@ C:/Users/wiesi/Desktop/GameDev/Warrior in forgotten Ithoria Project/Warrior in f
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+<<<<<<< Updated upstream
     "memorysetup-temp-allocator-size-cloud-worker=32768"
 Player connection [23648]  Target information:
 
@@ -73,6 +91,14 @@ Player connection [23648]  * "[IP] 192.168.178.20 [Port] 0 [Flags] 2 [Guid] 1105
 
 Player connection [23648] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [23648] Host joined alternative multi-casting on [225.0.0.222:34997]...
+=======
+Player connection [2372]  Target information:
+
+Player connection [2372]  * "[IP] 192.168.178.20 [Port] 0 [Flags] 2 [Guid] 1575265461 [EditorId] 1575265461 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8S0LE85) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [2372] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [2372] Host joined alternative multi-casting on [225.0.0.222:34997]...
+>>>>>>> Stashed changes
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,13 +110,22 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 4.44 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.14f1 (d68c3f99a318)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.14f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/wiesi/Desktop/GameDev/Warrior in forgotten Ithoria Project/Warrior in forgotten Ithoria/Assets
+=======
+Refreshing native plugins compatible for Editor in 5.06 ms, found 5 plugins.
+Initialize engine version: 6000.4.2f1 (7a4c1aeef971)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/wiesi/Desktop/GameDev/Warrior in forgotten Ithoria Project/Warrior in forgotten Ithoria/Assets
+Forcing GfxDevice: Direct3D 12
+>>>>>>> Stashed changes
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
+<<<<<<< Updated upstream
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
     Vendor:   NVIDIA
@@ -101,8 +136,29 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.14f1/Editor/Data/Manage
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.14f1/Editor/Data/MonoBleedingEdge/etc'
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+=======
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
+    Vendor:          NVIDIA
+    VRAM:            16107 MB
+    App VRAM Budget: 15339 MB
+    Driver:          32.0.15.9186
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+CodeReloadManager initialized
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-wiesi"
+[Licensing::IpcConnector] LicenseClient-wiesi channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-wiesi-6000.4.2" at "2026-06-23T18:52:08.7941865Z"
 Registering precompiled unity dll's ...
+<<<<<<< Updated upstream
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Registered in 0.001637 seconds.
 - Loaded All Assemblies, in  0.344 seconds
@@ -112,6 +168,10 @@ Registered in 0.001637 seconds.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-wiesi"
 [Licensing::IpcConnector] LicenseClient-wiesi channel disconnected successfully.
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-wiesi-6000.3.14" at "2026-06-23T16:41:13.2227289Z"
+=======
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002364 seconds.
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -119,6 +179,7 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.368 seconds
 Domain Reload Profiling: 710ms
 	BeginReloadAssembly (112ms)
@@ -152,6 +213,34 @@ Domain Reload Profiling: 710ms
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
+=======
+- Finished resetting the current domain, in  0.587 seconds
+Domain Reload Profiling: 1241ms
+	BeginReloadAssembly (175ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (301ms)
+		LoadAssemblies (171ms)
+		AnalyzeDomain (289ms)
+			TypeCache.Refresh (287ms)
+				TypeCache.ScanAssembly (267ms)
+	FinalizeReload (590ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (69ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (160ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              35bcdee6cad44d2292463d63d72d7112
+  Correlation Id:          57bb0c9c14474d8ac1576b4036882ac1
+  External correlation Id: 8196472634580180987
+  Machine Id:              yA11vvOMbs3gc+qfROlM1DABffU=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-wiesi-6000.4.2" (connect: 0.00s, validation: 0.00s, handshake: 1.24s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-wiesi-6000.4.2-notifications" at "2026-06-23T18:52:10.03185Z"
+[Licensing::Module] Licensing Background thread has ended after 2.39s
+>>>>>>> Stashed changes
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -173,18 +262,64 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  0.917 seconds
 Refreshing native plugins compatible for Editor in 2.04 ms, found 5 plugins.
+=======
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 3.06 ms, found 5 plugins.
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 3.23 ms, found 5 plugins.
+=======
+Refreshing native plugins compatible for Editor in 2.62 ms, found 5 plugins.
+>>>>>>> Stashed changes
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  1.013 seconds
 Domain Reload Profiling: 1926ms
 	BeginReloadAssembly (323ms)
@@ -400,4 +535,138 @@ Received Import Request.
   artifactKey: Guid(bce32abf84bf1754db59da1c4e4fde43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/_Recovery/0 (1).unity using Guid(bce32abf84bf1754db59da1c4e4fde43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '171150886c043165b08bf1aa9a6bd17b') in 0.0005295 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+=======
+- Finished resetting the current domain, in  0.981 seconds
+Domain Reload Profiling: 2016ms
+	BeginReloadAssembly (194ms)
+		DisableScriptedObjects (7ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (684ms)
+		LoadAssemblies (424ms)
+		AnalyzeDomain (363ms)
+			TypeCache.Refresh (241ms)
+				TypeCache.ScanAssembly (224ms)
+			BuildScriptInfoCaches (108ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (982ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (153ms)
+			ProcessInitializeOnLoadAttributes (497ms)
+			ProcessInitializeOnLoadMethodAttributes (150ms)
+			AfterProcessingInitializeOnLoad (6ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.98 ms, found 5 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7269 unused Assets / (7.0 MB). Loaded Objects now: 8095.
+Memory consumption went from 161.7 MB to 154.8 MB.
+Total: 11.951900 ms (FindLiveObjects: 0.888100 ms CreateObjectMapping: 0.992700 ms MarkObjects: 5.925300 ms  DeleteObjects: 4.142800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8932.715935 seconds.
+  path: Assets/Art/Tiles/normal room/stairs up normal room wall bottom .png
+  importAddress: Guid(6b7017e470256714d9828ad5681cd8e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/normal room/stairs up normal room wall bottom .png using Guid(6b7017e470256714d9828ad5681cd8e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '52e0a958f409ceb5e10e371059e1cff3') in 0.1233826 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5f95685926aa36019404b60cecc0beae DependenciesID=91c43eb1c71b408f1dbd0f5199c5fbbb StaticDependenciesID=167ceeda229c772d8748d7e953d1f779 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Art/Tiles/kealler/kaeller room wall bottom .png
+  importAddress: Guid(16b188b9810fde94b848de1ab36ed1f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/kealler/kaeller room wall bottom .png using Guid(16b188b9810fde94b848de1ab36ed1f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'aa54e3b8d0aa80e4036d2bad201d919d') in 0.0165587 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed58c9e945eb13c9b3896dfe0f87412b DependenciesID=5f81de908486d27c364925e4c269c4f1 StaticDependenciesID=0d6c0dc03bd30d5321206ff33a55a8ad 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Tiles/hotbar/itembar.png
+  importAddress: Guid(f50a017bbf469da4eb640a0beef79a88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/hotbar/itembar.png using Guid(f50a017bbf469da4eb640a0beef79a88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '92477b970affd28ff3eae24af6edb15f') in 0.0148801 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4d9769d790476bab69169f3c2c625513 DependenciesID=36927da9cb9ba6a98bf369193aba5420 StaticDependenciesID=964ef133e3dc10ed16c6d1760af26397 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Art/Tiles/normal room/normal room corner top left.png
+  importAddress: Guid(4734a6264080f6048a2c893d78f342e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/normal room/normal room corner top left.png using Guid(4734a6264080f6048a2c893d78f342e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '17abe2a1b9fdec0bd55527f9fd27a56f') in 0.0173732 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11dd3d2fee5b0e3863b0f4251f5ab36b DependenciesID=3d2fca11c9a48244fda9408f822f1c69 StaticDependenciesID=d619102e7d8d8c132c6099da6d0ad585 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Tiles/normal room/woodfloor.png
+  importAddress: Guid(579a5c562f29f7e4a94fbe2e19b4729c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/normal room/woodfloor.png using Guid(579a5c562f29f7e4a94fbe2e19b4729c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '974411302ec5fcb94669ca568c6acf7e') in 0.0146599 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cdcd7fd73042d58677c61951b8a016d0 DependenciesID=6191d70d9d83fdcb8bd7f2959a98f54a StaticDependenciesID=c746515db48ecf840e8a3895d15b3fed 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Tiles/normal room/normal room bottom corner left.png
+  importAddress: Guid(2ae4691cd303ae346a4a44bc8d675a32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/normal room/normal room bottom corner left.png using Guid(2ae4691cd303ae346a4a44bc8d675a32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3acb9ebd251bd5ec503d268e9480cb66') in 0.0160238 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5d29421957f122df83f16c206c054509 DependenciesID=662f7dec41a355b40c408d5be7e6e58e StaticDependenciesID=9527886365bc9a0772b4236f8c4cbc53 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Tiles/normal room/normal room top right corner.png
+  importAddress: Guid(6e8c1c91c89d2b444a2e4a590d9c65a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/normal room/normal room top right corner.png using Guid(6e8c1c91c89d2b444a2e4a590d9c65a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9a88c0e0b5d7ea8826244a1c0abfbf26') in 0.0126452 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a026ca283e8a6b1ff08f1e20435a25da DependenciesID=8f78a116e66edc133d08eeb6c2da23f2 StaticDependenciesID=5c252623fe2ee534eff7c4ff79845742 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Art/Tiles/normal room/normal room wall left .png
+  importAddress: Guid(a6c03900f2413c74a956c476960b6caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/normal room/normal room wall left .png using Guid(a6c03900f2413c74a956c476960b6caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd4c57e26f078c3905d446805691cec4d') in 0.0130991 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=80287fe3c596576b31fb878609b08f7c DependenciesID=d66de1b1e20d50b6851a8affba6358d7 StaticDependenciesID=65c968a6a2cb54336c2736fcafc491ca 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Art/Tiles/kealler/kaeller boden.png
+  importAddress: Guid(5c977ce9c7bd7814497f2e1a4853d01d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Tiles/kealler/kaeller boden.png using Guid(5c977ce9c7bd7814497f2e1a4853d01d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cc67819d4643ae1c3a6bb2d532ddc456') in 0.014472 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=492a7798cd51d39e2049fb66378b51ef DependenciesID=395e2d74a20c4e990dee4958e9fa473c StaticDependenciesID=402734426377b1beb54571d25e2c7618 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.078630 seconds.
+  path: Assets/Art/Tiles/kealler/kaeller bottom corner left.png
+  importAddress: Guid(614cc52a9b56af145bab9fd6de1737d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tiles/kealler/kaeller bottom corner left.png using Guid(614cc52a9b56af145bab9fd6de1737d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1ba9dcf408ba300e96d604f2a3e5c824') in 0.0932634 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=67b87abaf522583019f7080a0e54e489 DependenciesID=264a6d387d668c875a0d0bab42501189 StaticDependenciesID=12b74e969bb4e8e829ba3795e514fb71 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.853860 seconds.
+  path: Assets/Art/Tiles/normal room/normal room bottom corner right .png
+  importAddress: Guid(86aee5cb39ef11246967b8d4cff69ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tiles/normal room/normal room bottom corner right .png using Guid(86aee5cb39ef11246967b8d4cff69ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'df1964ccb1150899565cf3a7079a2a63') in 0.0153086 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=daf471bc209e2db142fbf753bfe2cfc3 DependenciesID=45195d6c03d8d394042d58c3db38ea09 StaticDependenciesID=c957115d9c2e9e5194faf3d28e037a18 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Tiles/normal room/normal room top wall.png
+  importAddress: Guid(39cd5b9621294c348a2f2622f781ed3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tiles/normal room/normal room top wall.png using Guid(39cd5b9621294c348a2f2622f781ed3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '163450a461bf5e5835eaf27996930954') in 0.015891 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=902e4756fe2349ed3c67a955811c3eb7 DependenciesID=57b328607e036c6f7edee76be3ef2dea StaticDependenciesID=2237695af545341a0703028b7c860227 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Tiles/normal room/normal room wall right.png
+  importAddress: Guid(9a84e5aaca5aaf94d874fdb86d4170b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tiles/normal room/normal room wall right.png using Guid(9a84e5aaca5aaf94d874fdb86d4170b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0cbed22c7909332119a7d22a1081e89e') in 0.0190736 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f2c6e08f196e67bd54e1cb2372e85692 DependenciesID=7a44f4adc927848186796d5ad9ad6ad6 StaticDependenciesID=bc622b3f23d28557e431408d81a9083f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+>>>>>>> Stashed changes
 
