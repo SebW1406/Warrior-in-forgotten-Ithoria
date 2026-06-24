@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -11,17 +12,21 @@ public class EnemyStats : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) 
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("SwordHitBox")) // Wenn die SchwertHitBox auf den Gegner trifft werden Leben abgezogen vom Gegner
         {
-            health --;
-                        
+            health--;
+
             if (health <= 0)
             {
                 GameObject.Destroy(gameObject);
             }
         }
-    }
 
+        if (collision.CompareTag("Player"))
+        {
+            collision.gameObject.transform.position = Vector3.zero;
+        }
+    }
 }
