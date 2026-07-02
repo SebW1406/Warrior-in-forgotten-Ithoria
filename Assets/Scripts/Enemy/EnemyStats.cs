@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     [SerializeField] private int health = 3; // Lebenspunkte des Gegner
+    [SerializeField] float knockbackPower = 20f; // Stärke des Rückstoßes
 
     // Update is called once per frame
     void Update()
@@ -26,7 +27,18 @@ public class EnemyStats : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            collision.gameObject.transform.position = Vector3.zero;
+            float diffrenzPosY = collision.transform.position.y - transform.position.y; // Differenz der Position vom Gegner und Spieler in der Y Koordinate
+            float diffrenzPosX = collision.transform.position.x - transform.position.x; // Differenz der Position vom Gegner und Spieler in der X Koordinate
+
+            float winkel = Mathf.Atan2(diffrenzPosY, diffrenzPosX); // Berechnung des Winkel
+
+            float sin = Mathf.Sin(winkel); // Berechnung Sinus
+            float cos = Mathf.Cos(winkel); // Berechnung Cosinus
+
+            Vector2 knockback = new Vector2(cos, sin) * knockbackPower; // Berechnung des Rückstoßes
+
+            collision.GetComponent<PlayerMovement>().ApplyKnockback(knockback);
         }
     }
+    
 }
