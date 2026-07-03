@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Enviroment
   - EnemyHitBox
+  - Wall
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Enemy
   - PlayerAttack
   - EnemyAttack
-  - 
+  - Wall
   - 
   - 
   - 
@@ -47,3 +49,4 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+  m_MigratedRenderPipelines: []

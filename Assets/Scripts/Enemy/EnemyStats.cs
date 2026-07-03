@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     [SerializeField] private int health = 3; // Lebenspunkte des Gegner
-    [SerializeField] float knockbackPower = 20f; // Stärke des Rückstoßes
+    [SerializeField] float knockbackPower = 10f; // Stärke des Rückstoßes
 
     // Update is called once per frame
     void Update()
