@@ -197,12 +197,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5297872, y: 0.66984284}
+    - - {x: -0.5551212, y: 0.40490356}
       - {x: -0.33681065, y: 0.055640534}
-      - {x: -0.5263607, y: -0.71687996}
-      - {x: 0.11942285, y: -0.45582554}
-      - {x: 0.36359525, y: 0.13888755}
-      - {x: 0.07575607, y: 0.68524265}
+      - {x: -0.53269356, y: -0.31947103}
+      - {x: 0.0054202676, y: -0.37634376}
+      - {x: 0.09758949, y: 0.026288345}
+      - {x: -0.06357969, y: 0.36069196}
   m_UseDelaunayMesh: 1
 --- !u!213 &382141561
 Sprite:
@@ -727,7 +727,7 @@ Transform:
   m_GameObject: {fileID: 698044890}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.52, y: -1.49, z: 0}
+  m_LocalPosition: {x: -13.57, y: -0.06, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -761,6 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
+  animator: {fileID: 698044899}
 --- !u!114 &698044895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,6 +788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   SwordHitBox: {fileID: 186243127}
+  animator: {fileID: 698044899}
 --- !u!70 &698044897
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1560,16 +1562,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -4, y: 2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -3, y: 2, z: 0}
     second:
       serializedVersion: 2
@@ -1733,21 +1725,21 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - serializedVersion: 2
-    m_RefCount: 72
+    m_RefCount: 71
     m_Data: {fileID: 11400000, guid: 53da7974588e60e47a569544cf873035, type: 2}
   - serializedVersion: 2
     m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
   - serializedVersion: 2
-    m_RefCount: 72
+    m_RefCount: 71
     m_Data: {fileID: -618476622946698980, guid: f9ef57cd98191254da1a7ca0fbaffc9c, type: 3}
   - serializedVersion: 2
     m_RefCount: 0
     m_Data: {fileID: 1970081222458077248, guid: c1e35119e9335b94e908cb4b66fc262b, type: 3}
   m_TileMatrixArray:
   - serializedVersion: 2
-    m_RefCount: 72
+    m_RefCount: 71
     m_Data:
       e00: 1
       e01: 0
@@ -1767,7 +1759,7 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - serializedVersion: 2
-    m_RefCount: 72
+    m_RefCount: 71
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1

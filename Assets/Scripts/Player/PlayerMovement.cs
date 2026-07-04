@@ -1,3 +1,4 @@
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,13 +7,14 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] public float speed = 5f; // Geschwindigkeit des Characters
     private Vector2 change; // Wird benötigt für das neue Inputsystem
+    private Vector2 currentpos;
 
     private Vector2 knockbackForce; // Richtung
     private Vector2 bewegung; // Richtung * Frames
     private Vector2 knockbackZielPos; // Jetzige Pos * Bewegung
-
-
     private float knockbackTimer = 0f;
+
+    [SerializeField] Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentpos = transform.position;
 
         if (knockbackTimer > 0) // Solange der Timer größer als 0 ist, ist die normale Steuerung gesperrt
         {
@@ -44,11 +47,41 @@ public class PlayerMovement : MonoBehaviour
 
         bool wall = Physics2D.OverlapCircle(movingTo, 0.1f, LayerMask.GetMask("Wall")); // Wenn die Postion wo sich der Spieler bewegen möchte eine Wand ist, stopt die bewegung
 
-        if (!wall)
+        if (!wall && currentpos != movingTo)
         {
+
+            animator.SetBool("isMoving", true);
             transform.position = movingTo; // Wenn keine Collission mit der Wand stattfindet dann update die Position des Spielers
+
+            // Änderungen der Animation Booleans, sodass die korrekte Animation gestartet wird
+            if (currentpos.x < movingTo.x)
+            {
+                animator.SetBool("isMovingX", true);
+                animator.SetBool("isMovingFront", false);
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else
+            {
+                animator.SetBool("isMovingX", true);
+                animator.SetBool("isMovingFront", false);
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+
+            if (currentpos.y > movingTo.y)
+            {
+                animator.SetBool("isMovingFront", true);
+                animator.SetBool("isMovingX", false);
+            }
+            else
+            {
+                animator.SetBool("isMovingFront", false);
+                animator.SetBool("isMovingX", true);
+            }
+    }
+        else
+        {
+            animator.SetBool("isMoving", false);
         }
-        
     }
 
     public void ApplyKnockback(Vector2 force) // Die Funktion wird im "EnemyStats" Script aufgerufen
