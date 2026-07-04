@@ -6,6 +6,7 @@ public class EnemyStats : MonoBehaviour
 {
     [SerializeField] private int health = 3; // Lebenspunkte des Gegner
     [SerializeField] float knockbackPower = 10f; // Stärke des Rückstoßes
+    [SerializeField] Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -21,12 +22,20 @@ public class EnemyStats : MonoBehaviour
 
             if (health <= 0)
             {
+                if (gameObject.name == "Kakamaus")
+                {
+                    animator.CrossFade("Kakamaus Death", 0.1f);
+                }
                 GameObject.Destroy(gameObject);
             }
         }
 
         if (collision.CompareTag("Player"))
         {
+            if (gameObject.name == "Schurke")
+            {
+                animator.CrossFade("Schurke Attack", 0.1f);
+            }
             float diffrenzPosY = collision.transform.position.y - transform.position.y; // Differenz der Position vom Gegner und Spieler in der Y Koordinate
             float diffrenzPosX = collision.transform.position.x - transform.position.x; // Differenz der Position vom Gegner und Spieler in der X Koordinate
 

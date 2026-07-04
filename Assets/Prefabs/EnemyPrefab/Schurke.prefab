@@ -83,8 +83,9 @@ GameObject:
   - component: {fileID: 2726514516693535330}
   - component: {fileID: 1913250842103744363}
   - component: {fileID: 1782557241794430706}
+  - component: {fileID: 6464696944434686498}
   m_Layer: 7
-  m_Name: Enemy
+  m_Name: Schurke
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,8 +156,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.9150943, g: 0.10791205, b: 0.10791205, a: 1}
+  m_Sprite: {fileID: 1970081222458077248, guid: 104043e69b666bb4b9afb9b4367e91ab, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -242,6 +243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
   health: 3
+  knockbackPower: 10
+  animator: {fileID: 6464696944434686498}
 --- !u!114 &1782557241794430706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,3 +258,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RaycastEnemy
   maxdistanceRaycast: 50
+  animator: {fileID: 6464696944434686498}
+--- !u!95 &6464696944434686498
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653466973385393440}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ef2eede7faf823409ffec1d88ae75a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -4,6 +4,7 @@ public class RaycastEnemy : MonoBehaviour
 {
     [SerializeField] private float maxdistanceRaycast = 50f;
     private GameObject player;
+    [SerializeField] Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,11 +27,12 @@ public class RaycastEnemy : MonoBehaviour
         if (hit.collider.CompareTag("Player") && distance <= 3f)
         {
             //Debug.Log("Treffer " + hit.collider.gameObject);
+            animator.CrossFade("Schurke Walk", 0.1f);
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 2.5f * Time.deltaTime);
         }
         else
         {
-             //Debug.Log(hit.collider.gameObject);
+            animator.CrossFade("Schurke Idle", 0.5f);
         }
 
         Debug.DrawRay(origin, direction, Color.yellow);

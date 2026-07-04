@@ -10,6 +10,7 @@ TagManager:
   - EnemyHitBox
   - Wall
   - Ground
+  - KAKALoch_exit
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - PlayerAttack
   - EnemyAttack
   - Wall
-  - 
+  - EnemySpawner
   - 
   - 
   - 

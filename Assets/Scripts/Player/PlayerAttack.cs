@@ -13,7 +13,6 @@ public class PlayerAttack : MonoBehaviour
 
     private Vector2 pos;
 
-
     [SerializeField] Animator animator;
 
     // Update is called once per frame

@@ -5,6 +5,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEditor.Rendering;
 using UnityEditorInternal.VR;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 using static UnityEngine.Rendering.DebugUI;
 
@@ -21,7 +22,9 @@ public class KAKAMaus_Enemy : MonoBehaviour
 
     [SerializeField] private float ExitAnimationInSeconds = 3f;
 
+    [SerializeField] Animator animator;
 
+    
 
     void Start()
     {
@@ -55,27 +58,44 @@ public class KAKAMaus_Enemy : MonoBehaviour
         
         if (RayHitRight.collider != null && RayHitRight.collider.CompareTag("KAKALoch_exit")) // Wenn Rayhit UNGLEICH 0 (Also wenn der was trifft, lol) UND Das GameObject den Tag "KAKALoch_Exit" hat dann ->
         {
+            Tilemap exit = RayHitRight.collider.GetComponent<Tilemap>();
+            Vector3Int cellPos = exit.WorldToCell(RayHitRight.point);
+            Vector3 targetPos = exit.GetCellCenterWorld(cellPos);
+
+            animator.CrossFade("Kakamaus Run", 0.1f);
             Debug.Log("RECHTS: " + RayHitRight.collider.gameObject);
-            transform.position = Vector2.MoveTowards(transform.position, RayHitRight.collider.gameObject.transform.position, SpeedofMaus * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, targetPos, SpeedofMaus * Time.deltaTime);
+            //StartCoroutine(MouseExiting());
             //Von der JETZIGEN POSITION zum GAMEOBJECT was vom Raycast getroffen wurde
         }
 
         else if (RayHitLeft.collider != null && RayHitLeft.collider.CompareTag("KAKALoch_exit"))
         {
+            Tilemap exit = RayHitLeft.collider.GetComponent<Tilemap>();
+            Vector3Int cellPos = exit.WorldToCell(RayHitLeft.point);
+            Vector3 targetPos = exit.GetCellCenterWorld(cellPos);
+
+            animator.CrossFade("Kakamaus Run", 0.1f);
+            GetComponent<SpriteRenderer>().flipX = true;
             Debug.Log("LINKS: " + RayHitLeft.collider.gameObject);
-            transform.position = Vector2.MoveTowards(transform.position, RayHitLeft.collider.gameObject.transform.position, SpeedofMaus * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, targetPos, SpeedofMaus * Time.deltaTime);
+
         }
         else
         {
             //anim Death
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         
     }
 
-    void OnCollisionExit2D(Collision2D collider)
+    void OnCollisionEnter2D(Collision2D collider)
     {
-        StartCoroutine(MouseExiting());
+        if (collider.collider.CompareTag("KAKALoch_exit"))
+        {
+            StartCoroutine(MouseExiting());
+
+        }
     }
 
     IEnumerator MouseExiting()

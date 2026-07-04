@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class KAKAMaus_spawner : MonoBehaviour
 {
@@ -11,12 +12,27 @@ public class KAKAMaus_spawner : MonoBehaviour
     //spawn per sec
     [SerializeField] private float SpawnPerSecond = 2.5f;
 
-    
+    [SerializeField] private Tilemap tilemap;
+    Vector3Int cellPosition;
+    Vector3 spawnPoint;
 
 
     void Start()
     {
-        StartCoroutine(SpawnerinSeconds());
+        Vector3Int cellPosition = tilemap.WorldToCell(transform.localPosition);
+        spawnPoint = tilemap.GetCellCenterWorld(cellPosition);
+        //StartCoroutine(SpawnerinSeconds());
+
+        foreach (var pos in tilemap.cellBounds.allPositionsWithin)
+        {
+            TileBase tile = tilemap.GetTile(pos);
+            if (tile != null && tile.name == "Normal room wall left hole") // && tile.name == "KakamausSpawner"
+            {
+                //Debug.Log("Tile gefunden: " + tile.name);
+                Vector2 worldPos = tilemap.GetCellCenterWorld(pos);
+                StartCoroutine(SpawnerinSeconds(worldPos));
+            }
+        }
     }
 
     // Update is called once per frame
@@ -26,20 +42,21 @@ public class KAKAMaus_spawner : MonoBehaviour
     }
 
     //spawning per second
-    IEnumerator SpawnerinSeconds()
+    IEnumerator SpawnerinSeconds(Vector2 tilePos)
     {
         while (true)
         {
             //yield return new WaitForSeconds(SpawnPerSecond); - animation
 
-            SpawnObject();
+            SpawnObject(tilePos);
             yield return new WaitForSeconds(SpawnPerSecond);
         }
     }
 
-    void SpawnObject()
+    void SpawnObject(Vector2 tilePos)
     {
-        Instantiate(KakaMaus_Prefab, transform.position, Quaternion.identity);
+        //Debug.Log("Spawning:" + KakaMaus_Prefab);
+        Instantiate(KakaMaus_Prefab, tilePos, Quaternion.identity);
     }
 
 }
