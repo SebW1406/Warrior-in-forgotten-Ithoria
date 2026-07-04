@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Art/Tiles/normal room/normal_room_wall_left_real.png.meta
-guid: 33b96caf9fdff114cad669242d0f3f53
-========
-guid: 65547c9e0d1612f47ab31ff07d4348c5
->>>>>>>> Helenas:Assets/Art/Tiles/normal room/normal room wall right real.png.meta
+guid: 98982013bbc287b41aecbc87cdc56773
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
