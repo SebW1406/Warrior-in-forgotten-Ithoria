@@ -69,7 +69,6 @@ public class PlayerAttack : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown); // Cooldown bevor man wieder angreifen kann
     }
     
-
     public void HasXOrYChanged(Vector2 currentpos)
     {
         pos = currentpos;

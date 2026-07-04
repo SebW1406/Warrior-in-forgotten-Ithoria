@@ -17,14 +17,12 @@ public class KAKAMaus_Enemy : MonoBehaviour
     //[SerializeField] private GameObject  KAKALoch_Exit;
 
 
-
     [SerializeField] private float SpeedofMaus = 3f;
 
-    [SerializeField] private float ExitAnimationInSeconds = 3f;
+    [SerializeField] private float ExitAnimationInSeconds = 1f;
 
     [SerializeField] Animator animator;
 
-    
 
     void Start()
     {
@@ -37,8 +35,6 @@ public class KAKAMaus_Enemy : MonoBehaviour
         Debug.DrawRay(transform.position , Vector2.right,Color.red);
         Debug.DrawRay(transform.position, Vector2.left, Color.yellow);
     
-
-
 
         // mask  = EnemySpanwer - layer
         int enemyMask = LayerMask.GetMask("EnemySpawner");
@@ -55,7 +51,6 @@ public class KAKAMaus_Enemy : MonoBehaviour
 
         //wenn Rayhit ollider drift mit name/TAG KLoch dann tu xyz
 
-        
         if (RayHitRight.collider != null && RayHitRight.collider.CompareTag("KAKALoch_exit")) // Wenn Rayhit UNGLEICH 0 (Also wenn der was trifft, lol) UND Das GameObject den Tag "KAKALoch_Exit" hat dann ->
         {
             Tilemap exit = RayHitRight.collider.GetComponent<Tilemap>();
@@ -89,15 +84,13 @@ public class KAKAMaus_Enemy : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collider)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collider.collider.CompareTag("KAKALoch_exit"))
+        if (collision.CompareTag("KAKALoch_exit"))
         {
             StartCoroutine(MouseExiting());
-
         }
     }
-
     IEnumerator MouseExiting()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
@@ -108,7 +101,6 @@ public class KAKAMaus_Enemy : MonoBehaviour
         Destroy(gameObject);
      
         //  Destroy(Sprite_change);
-
     }
 
 }

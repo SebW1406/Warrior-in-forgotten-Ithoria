@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     private string currentAnimation = "";
     private Vector2 lastDir;
 
-    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -97,11 +96,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         CheckAnimation();
-
-        
     }
-            
-
     public void ApplyKnockback(Vector2 force) // Die Funktion wird im "EnemyStats" Script aufgerufen
     {
         knockbackForce = force; // Die Variablen die oben gesetzt wurden erhalten hier ihre Werte

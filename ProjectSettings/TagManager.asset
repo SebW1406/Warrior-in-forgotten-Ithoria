@@ -11,6 +11,7 @@ TagManager:
   - Wall
   - Ground
   - KAKALoch_exit
+  - Loch
   layers:
   - Default
   - TransparentFX

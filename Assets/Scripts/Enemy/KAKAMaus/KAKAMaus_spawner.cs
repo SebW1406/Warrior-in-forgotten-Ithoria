@@ -16,7 +16,6 @@ public class KAKAMaus_spawner : MonoBehaviour
     Vector3Int cellPosition;
     Vector3 spawnPoint;
 
-
     void Start()
     {
         Vector3Int cellPosition = tilemap.WorldToCell(transform.localPosition);
@@ -58,6 +57,4 @@ public class KAKAMaus_spawner : MonoBehaviour
         //Debug.Log("Spawning:" + KakaMaus_Prefab);
         Instantiate(KakaMaus_Prefab, tilePos, Quaternion.identity);
     }
-
 }
-

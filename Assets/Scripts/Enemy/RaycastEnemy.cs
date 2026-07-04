@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class RaycastEnemy : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class RaycastEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         Vector2 origin = transform.position;
         Vector2 direction = (player.transform.position - transform.position).normalized;
         int mask = LayerMask.GetMask("Player", "Default"); // Hier wird eingestellt welche Tags berücksichtigt werden
