@@ -6,6 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private int health = 3;
     [SerializeField] private float iFrames = 0.5f;
+    [SerializeField] Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,7 +27,8 @@ public class PlayerStats : MonoBehaviour
             health--;
             if (health <= 0)
             {
-                Destroy(gameObject);
+                GetComponent<CapsuleCollider2D>().enabled = false;
+                animator.CrossFade("Player Death", 0.1f);
                 //Time.timeScale = 0f;
             }
         }
