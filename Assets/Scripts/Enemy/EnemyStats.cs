@@ -7,18 +7,32 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class EnemyStats : MonoBehaviour
 {
     [SerializeField] private int health = 3; // Lebenspunkte des Gegner
-    [SerializeField] float knockbackPower = 10f; // Stärke des Rückstoßes
+    [SerializeField] float knockbackPower = 10f; // Stärke des Rückstoßes an Spieler
     [SerializeField] Animator animator;
 
     Vector2 knockbackForce;
     Vector2 bewegung;
     Vector2 knockbackZielPos;
+    float knockbackTimer = 0f;
 
     // Update is called once per frame
     void Update()
     {
+        if (knockbackTimer > 0f)
+        {
+            knockbackTimer -= Time.deltaTime;
+            bewegung = knockbackForce * Time.deltaTime;
+            knockbackZielPos = (Vector2)transform.position + bewegung;
 
-        
+
+            bool wallKnockback = Physics2D.OverlapCircle(knockbackZielPos, 0.5f, LayerMask.GetMask("Wall")); // Wenn beim Knockback eine Wand getroffen werden würde, dann stopt der Rückstoß
+
+            if (!wallKnockback)
+            {
+                transform.position += (Vector3)knockbackZielPos * Time.deltaTime; // Der Rückstoß wird an den Gegner angewendent
+
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,7 +58,7 @@ public class EnemyStats : MonoBehaviour
             float sin = Mathf.Sin(winkel); // Berechnung Sinus
             float cos = Mathf.Cos(winkel); // Berechnung Cosinus
 
-            Vector2 knockback = new Vector2(cos, sin) * 1.25f; // Berechnung des Rückstoßes
+            Vector2 knockback = new Vector2(cos, sin) * 4f; // Berechnung des Rückstoßes
 
             ApplyKnockbackEnemy(knockback);
 
@@ -52,17 +66,6 @@ public class EnemyStats : MonoBehaviour
             {
                 GetComponent<RaycastEnemy>().enabled = false;
                 StartCoroutine(ReenableRaycastEnemy());
-            }
-
-            bewegung = knockbackForce * Time.deltaTime;
-            knockbackZielPos = (Vector2)transform.position + bewegung;
-
-            bool wallKnockback = Physics2D.OverlapCircle(knockbackZielPos, 0.5f, LayerMask.GetMask("Wall")); // Wenn beim Knockback eine Wand getroffen werden würde, dann stopt der Rückstoß
-
-            if (!wallKnockback)
-            {
-                Vector2.Lerp(transform.position, knockbackForce, 0.5f); // Der Rückstoß wird an den Spieler angewendent
-                knockbackZielPos = Vector2.zero;
             }
 
         }
@@ -87,15 +90,15 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
-    IEnumerator ReenableRaycastEnemy()
+    IEnumerator ReenableRaycastEnemy() // Hier wird das Raycast Script (falls am Gegner vorhanden) kurz deaktiviert wenn man diesen getroffen hat
     {
         yield return new WaitForSeconds(0.5f);
         GetComponent<RaycastEnemy>().enabled = true;
-
     }
 
     public void ApplyKnockbackEnemy(Vector2 force) // Die Funktion wird im "EnemyStats" Script aufgerufen
     {
         knockbackForce = force; // Die Variablen die oben gesetzt wurden erhalten hier ihre Werte
+        knockbackTimer = 0.15f;
     }
 }

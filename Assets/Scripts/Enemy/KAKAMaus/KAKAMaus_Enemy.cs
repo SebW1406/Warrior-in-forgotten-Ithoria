@@ -58,7 +58,7 @@ public class KAKAMaus_Enemy : MonoBehaviour
             Vector3 targetPos = exit.GetCellCenterWorld(cellPos);
 
             animator.CrossFade("Kakamaus Run", 0.1f);
-            Debug.Log("RECHTS: " + RayHitRight.collider.gameObject);
+            //Debug.Log("RECHTS: " + RayHitRight.collider.gameObject);
             transform.position = Vector2.MoveTowards(transform.position, targetPos, SpeedofMaus * Time.deltaTime);
             //StartCoroutine(MouseExiting());
             //Von der JETZIGEN POSITION zum GAMEOBJECT was vom Raycast getroffen wurde
@@ -72,7 +72,7 @@ public class KAKAMaus_Enemy : MonoBehaviour
 
             animator.CrossFade("Kakamaus Run", 0.1f);
             GetComponent<SpriteRenderer>().flipX = true;
-            Debug.Log("LINKS: " + RayHitLeft.collider.gameObject);
+            //Debug.Log("LINKS: " + RayHitLeft.collider.gameObject);
             transform.position = Vector2.MoveTowards(transform.position, targetPos, SpeedofMaus * Time.deltaTime);
 
         }
