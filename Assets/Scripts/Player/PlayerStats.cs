@@ -8,6 +8,13 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private float iFrames = 0.5f;
     [SerializeField] Animator animator;
 
+    [SerializeField] int keysPlayer;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,7 +36,7 @@ public class PlayerStats : MonoBehaviour
             {
                 GetComponent<CapsuleCollider2D>().enabled = false;
                 animator.CrossFade("Player Death", 0.1f);
-                //Time.timeScale = 0f;
+                Time.timeScale = 0f;
             }
         }
     }
@@ -40,5 +47,10 @@ public class PlayerStats : MonoBehaviour
         yield return new WaitForSeconds(iFrames);
 
         Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
+
+    public void KeyPickUp(int keys)
+    {
+        keysPlayer += keys;
     }
 }
