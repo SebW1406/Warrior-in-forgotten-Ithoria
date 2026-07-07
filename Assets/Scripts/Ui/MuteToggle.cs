@@ -4,24 +4,36 @@ public class MuteToggle : MonoBehaviour
 {
 
     private Sprite soundOnImage;
-    public Sprite soundOffImage;
-    public Button button;
+    [SerializeField] public Sprite soundOffImage;
+    [SerializeField] private Button button;
+    [SerializeField] private AudioSource audioSource;
+
     private bool isOn = true;
 
-    public AudioSource audioSource;
 
     Image SoundimageChild;
 
-    void Awake()
+
+    void Start()
     {
+        if (transform.childCount > 2)
+        {
+            SoundimageChild = transform.GetChild(2).GetComponent<Image>();
+            if (SoundimageChild != null)
+            {
+                soundOnImage = SoundimageChild.sprite;
+            }
+            else
+            {
+                Debug.LogError("Das dritte Kind hat kein Image-Komponente!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Das GameObject hat weniger als 3 Kinder!");
+        }
     }
 
-    
-void Start()
-    {
-        SoundimageChild = transform.GetChild(2).GetComponent<Image>(); /// Give me the third child, and give me its Image componente
-        soundOnImage = SoundimageChild;
-    }
 
     // Update is called once per frame
     void Update()
@@ -31,19 +43,28 @@ void Start()
 
     public void ButtonClicked()
     {
+
+        Debug.Log($"SoundimageChild: {SoundimageChild != null}");
+        Debug.Log($"soundOnImage: {soundOnImage != null}");
+        Debug.Log($"soundOffImage: {soundOffImage != null}");
+
+
+
         if (isOn)
-        { 
-            button.image.sprite = soundOffImage;
+        {
+            SoundimageChild.sprite = soundOffImage;
             isOn = false;
             audioSource.mute = true;
         }
 
         else 
         {
-            button.image.sprite = soundOnImage;
+            SoundimageChild.sprite = soundOnImage;
             isOn = true;
             audioSource.mute = false;
         }
+   
+    
     }
 
 
