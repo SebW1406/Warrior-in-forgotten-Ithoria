@@ -391,9 +391,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111e0b41acf535b489c2f31d0e66ac87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
-  health: 900
+  health: 1
   iFrames: 0.5
   animator: {fileID: 2733278320391382199}
+  GameOverScreen: {fileID: 5336680557216780369, guid: 13308fc90b0e781488849da61364ff0e, type: 3}
+  keysPlayer: 0
 --- !u!95 &2733278320391382199
 Animator:
   serializedVersion: 7

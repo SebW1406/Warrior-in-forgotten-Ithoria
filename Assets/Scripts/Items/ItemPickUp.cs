@@ -22,6 +22,8 @@ public class ItemPickUp : MonoBehaviour
         {
             collision.GetComponentInParent<PlayerStats>().KeyPickUp(key);
             Destroy(gameObject);
+
+            
         }
     }
 }

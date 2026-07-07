@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    [Header("Stats")]
     [SerializeField] private int health = 3;
     [SerializeField] private float iFrames = 0.5f;
-    [SerializeField] Animator animator;
+    [Space]
 
+    [Header("Animator")]
+    [SerializeField] Animator animator;
+    [Space]
+
+    [Header("Canvas")]
+    [SerializeField] GameObject GameOverScreen;
+    [Space]
+
+    [Header("Items")]
     [SerializeField] int keysPlayer;
 
     void Awake()
@@ -33,10 +43,17 @@ public class PlayerStats : MonoBehaviour
         if (collision.CompareTag("EnemyHitBox"))
         {
             health--;
+            
+            if (collision.GetComponent<RaycastEnemy>() == true)
+            {
+                collision.GetComponent<RaycastEnemy>().GetHealth(health);
+            }
+
             if (health <= 0)
             {
                 GetComponent<CapsuleCollider2D>().enabled = false;
                 animator.CrossFade("Player Death", 0.1f);
+                GameOverScreen.SetActive(true);
                 Time.timeScale = 0f;
             }
         }

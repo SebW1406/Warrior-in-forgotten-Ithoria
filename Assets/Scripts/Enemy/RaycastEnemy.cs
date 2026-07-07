@@ -5,6 +5,7 @@ public class RaycastEnemy : MonoBehaviour
 {
     [SerializeField] private float maxdistanceRaycast = 50f;
     private GameObject player;
+    private int playerHealth = 3;
     [SerializeField] Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,18 +27,27 @@ public class RaycastEnemy : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, maxdistanceRaycast, mask);
 
-        if (hit.collider.CompareTag("Player") && distance <= 3f)
+        if (playerHealth > 0)
         {
-            //Debug.Log("Treffer " + hit.collider.gameObject);
-            animator.CrossFade("Schurke Walk", 0.1f);
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 2.5f * Time.deltaTime);
-        }
-        else
-        {
-            animator.CrossFade("Schurke Idle", 0.5f);
+            if (hit.collider.CompareTag("Player") && distance <= 3f)
+            {
+                //Debug.Log("Treffer " + hit.collider.gameObject);
+                animator.CrossFade("Schurke Walk", 0.1f);
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 2.5f * Time.deltaTime);
+            }
+            else
+            {
+                animator.CrossFade("Schurke Idle", 0.5f);
+            }
+
         }
 
-        Debug.DrawRay(origin, direction, Color.yellow);
+         Debug.DrawRay(origin, direction, Color.yellow);
 
+    }
+
+    public void GetHealth(int health)
+    {
+        playerHealth = health;
     }
 }
