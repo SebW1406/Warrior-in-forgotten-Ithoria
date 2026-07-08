@@ -1,6 +1,8 @@
 using System.Collections;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -13,29 +15,48 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] Animator animator;
     [Space]
 
-    [Header("Canvas")]
-    [SerializeField] GameObject GameOverScreen;
-    [Space]
+    // Canvas + UI
+    private GameObject GameOverScreen;
+    private Canvas GameCanvas;
+
+    private TextMeshProUGUI healthUI;
+    private GameObject GameUI;
 
     [Header("Items")]
     [SerializeField] int keysPlayer;
 
+
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
+
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Camera.main.GetComponent<KameraMovement>().Player(transform);
+        Camera.main.GetComponent<KameraMovement>().Player(transform); // Hier wird die Kamera geholt für den Spieler
 
+        // Canvas Stuff
+        // Game Over
+        if (GameCanvas == null) { GameCanvas = FindAnyObjectByType<Canvas>(); }
+        Transform GOUI = GameCanvas.transform.Find("Gamer Over UI");
+        if (GOUI != null) { GameOverScreen = GOUI.gameObject; }
+
+        // Game UI
+        Transform GUI = GameCanvas.transform.Find("Game UI");
+        if (GUI != null) {  GameUI  = GUI.gameObject; }
+        Transform healthTransform = GUI.transform.Find("HealthUI");
+        if (healthTransform != null) { healthUI = healthTransform.GetComponent<TextMeshProUGUI>(); }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,7 +64,9 @@ public class PlayerStats : MonoBehaviour
         if (collision.CompareTag("EnemyHitBox"))
         {
             health--;
-            
+            healthUI.text = $"Leben: {health}";
+
+
             if (collision.GetComponent<RaycastEnemy>() == true)
             {
                 collision.GetComponent<RaycastEnemy>().GetHealth(health);
@@ -53,8 +76,12 @@ public class PlayerStats : MonoBehaviour
             {
                 GetComponent<CapsuleCollider2D>().enabled = false;
                 animator.CrossFade("Player Death", 0.1f);
-                GameOverScreen.SetActive(true);
-                Time.timeScale = 0f;
+                Debug.Log("Screen Aktivieren: " + GameOverScreen.name);
+                if (GameOverScreen != null)
+                {
+                    GameOverScreen.SetActive(true);
+                }
+                //Time.timeScale = 0f;
             }
         }
     }
