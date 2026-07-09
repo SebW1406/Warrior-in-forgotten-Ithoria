@@ -20,7 +20,7 @@ public class RaycastEnemy : MonoBehaviour
 
         Vector2 origin = transform.position;
         Vector2 direction = (player.transform.position - transform.position).normalized;
-        int mask = LayerMask.GetMask("Player", "Default"); // Hier wird eingestellt welche Tags berücksichtigt werden
+        int mask = LayerMask.GetMask("Player", "Default", "Wall"); // Hier wird eingestellt welche Tags berücksichtigt werden
 
         float distance = Vector2.Distance(origin, player.transform.position);
         //Debug.Log(distance);

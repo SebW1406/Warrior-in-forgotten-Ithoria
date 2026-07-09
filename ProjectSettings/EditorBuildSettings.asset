@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Normal_Room_1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/OptionsMainScreen.unity
-    guid: 97a0cf5249dfbaa458d56cc5869259aa
-  - enabled: 1
     path: Assets/Scenes/GameEnd.unity
     guid: 70826aea6b6e13c40beeaf36390334a9
+  - enabled: 1
+    path: Assets/Scenes/OptionsMainScreen.unity
+    guid: 97a0cf5249dfbaa458d56cc5869259aa
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

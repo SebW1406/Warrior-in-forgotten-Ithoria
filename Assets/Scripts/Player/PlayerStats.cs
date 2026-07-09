@@ -23,13 +23,12 @@ public class PlayerStats : MonoBehaviour
     private GameObject GameUI;
 
     [Header("Items")]
-    [SerializeField] int keysPlayer;
+    [SerializeField] int keyInventory;
 
 
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
-
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -84,6 +83,7 @@ public class PlayerStats : MonoBehaviour
                 //Time.timeScale = 0f;
             }
         }
+
     }
 
     IEnumerator IFrames()
@@ -96,6 +96,17 @@ public class PlayerStats : MonoBehaviour
 
     public void KeyPickUp(int keys)
     {
-        keysPlayer += keys;
+        keyInventory += keys;
     }
+
+    public int GetKeys()
+    {
+        return keyInventory;
+    }
+
+    public void UseKey()
+    {
+        keyInventory--;
+    }
+
 }

@@ -31,6 +31,7 @@ public class KAKAMaus_spawner : MonoBehaviour
                 Vector2 worldPos = tilemap.GetCellCenterWorld(pos);
                 StartCoroutine(SpawnerinSeconds(worldPos));
             }
+
         }
     }
 
